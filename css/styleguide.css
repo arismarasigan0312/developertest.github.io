@@ -1,0 +1,302 @@
+:root {
+    --gutter: 15px;
+    --color-primary: #BAD036;
+    --color-secondary: #708CB1;
+    --color-accent: #BAD036;
+    --color-cream: #F5F2ED;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-gray: #646464;
+    --color-brown: #BCAB90;
+
+}
+
+@media (min-width: 1025px) {
+    :root {
+        --gutter: 20px;
+    }
+}
+
+
+/* general */
+html * {
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-white);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'body-text';
+    src: url('../fonts/Proxima-Nova-Thin.woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'body-text';
+    font-weight: 400;
+    src: url('../fonts/Proxima-Nova-Regular.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'header-text';
+    font-weight: 700;
+    src: url('../fonts/Proxima-Nova-Bold.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'header-text';
+    src: url('../fonts/Proxima-Nova-Black.woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+.header-text {
+    font-family: 'header-text';
+    font-weight: 700;
+}
+
+.body-text {
+    font-family: 'body-text';
+    font-weight: normal;
+}
+
+
+
+.btn {
+    font-family: 'header-text';
+    font-size: 1.25rem;
+    padding: 6px 33px;
+    border: 1px solid;
+    border-radius: 22.5px;
+    transition: all .3s;
+    text-transform: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+}
+
+.btn-lg {
+    font-size: 1.5rem;
+    padding: 13px 28px;
+    border-radius: 28px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s;
+    color: var(--color-black);
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--color-accent);
+}
+
+/* font sizes */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: 'header-text';
+    line-height: 1.25;
+    margin-top: 0px;
+    margin-bottom: var(--gutter);
+}
+
+body,
+table,
+p {
+    font-family: 'body-text';
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-bottom: var(--gutter);
+}
+
+
+
+h1,
+.h1 {
+    font-size: 2.875rem;
+}
+
+
+.text-lg {
+    font-size: 1rem !important;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 740px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        max-width: 900px;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+
+    .container {
+        max-width: 980px;
+    }
+
+    h1,
+    .h1 {
+        font-size: 4.5rem;
+    }
+
+
+    .text-lg {
+        font-size: 1.25rem !important;
+    }
+
+
+    .btn-lg {
+        font-size: 1.5rem;
+        padding: 13px 77px;
+    }
+
+
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+
+.text-white {
+    color: var(--color-white) !important;
+}
+
+.text-black {
+    color: var(--color-black) !important;
+}
+
+.text-gray {
+    color: var(--color-gray) !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    color: var(--color-primary) !important;
+    background-color: var(--color-white);
+}
+
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-white) !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+    color: var(--color-secondary) !important;
+    background-color: var(--color-white);
+}
+
+.btn-brown {
+    background-color: var(--color-brown);
+    border-color: var(--color-brown);
+    color: var(--color-white) !important;
+}
+
+.btn-brown:hover,
+.btn-brown:active,
+.btn-brown:focus {
+    color: var(--color-brown) !important;
+    background-color: var(--color-white);
+}
+
+
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-cream {
+    background-color: var(--color-cream);
+}
+
+
+
+.indexed {
+    position: relative;
+    z-index: 2;
+}
+
+.d-grid-wrap {
+    display: grid;
+    flex-wrap: wrap;
+}
