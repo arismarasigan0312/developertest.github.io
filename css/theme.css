@@ -269,8 +269,7 @@
 .med_pro-header {
     max-width: 474px;
     font-size: 1.5rem;
-    margin-bottom: 60px;
-    justify-self: center;
+    margin: 0px auto 60px;
 }
 
 .med_pro-cntr {
@@ -678,6 +677,11 @@ footer .bg-secondary {
 
 @media (max-width: 991px) {
 
+    .wood-bg {
+        height: 43px;
+        object-fit: cover;
+    }
+
     .gallery-slider .slick-next {
         right: -40px;
     }
@@ -719,6 +723,11 @@ footer .bg-secondary {
 }
 
 @media (max-width: 767px) {
+
+
+    .navbar-cntr {
+        background-color: var(--color-white);
+    }
 
     .faq-collapse {
         padding: 20px 50px 20px 0px;
@@ -810,10 +819,18 @@ footer .bg-secondary {
         right: -10px;
     }
 
+    /* 
+    .med_pro-wrapper .slick-track,
+    .med_pro-wrapper .slick-list {
+        width: 100%;
+        max-width: 100%;
+    } */
+
     .med_pro-wrapper {
         display: block;
         grid-template-columns: unset;
         column-gap: unset;
+        max-width: 100%;
         width: 100%;
     }
 
@@ -909,7 +926,7 @@ footer .bg-secondary {
     }
 
     .hero_banner-img {
-        position: initial;
+        position: relative;
         margin: 0 auto;
         width: 100%;
         max-width: 440px;
